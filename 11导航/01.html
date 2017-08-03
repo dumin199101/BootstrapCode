@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>导航</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="container">
+    <h1>选项卡</h1>
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="">首页</a></li>
+        <li><a href="">导航1</a></li>
+        <li><a href="">导航2</a></li>
+        <li><a href="">导航3</a></li>
+    </ul>
+    <h1>胶囊式</h1>
+    <ul class="nav nav-pills">
+        <li class="active"><a href="">首页</a></li>
+        <li><a href="">导航1</a></li>
+        <li><a href="">导航2</a></li>
+        <li><a href="">导航3</a></li>
+    </ul>
+    <h1>堆叠导航</h1>
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="">首页</a></li>
+        <li><a href="">导航1</a></li>
+        <li><a href="">导航2</a></li>
+        <li><a href="">导航3</a></li>
+    </ul>
+    <h1>自适应</h1>
+    <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="">首页</a></li>
+        <li><a href="">导航1</a></li>
+        <li><a href="">导航2</a></li>
+        <li><a href="">导航3</a></li>
+    </ul>
+    <h1>禁用激活</h1>
+    <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="">首页</a></li>
+        <li class="nav-divider"></li>
+        <li class="disabled"><a href="">导航2</a></li>
+        <li><a href="">导航3</a></li>
+    </ul>
+    <h1>二级导航</h1>
+    <ul class="nav nav-pills">
+        <li class="active">
+            <a href="" class="dropdown-toggle" data-toggle="dropdown">首页<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li class="active"><a href="">二级1</a></li>
+                <li><a href="">耳机2</a></li>
+                <li><a href="">二级3</a></li>
+            </ul>
+        </li>
+        <li><a href="">导航2</a></li>
+        <li><a href="">导航3</a></li>
+    </ul>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
