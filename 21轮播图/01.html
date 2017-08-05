@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>轮播图</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div id="carousel_container" class="carousel slide" data-ride="carousel">
+                <!--图片容器-->
+                <div class="carousel-inner">
+                    <div class="item"><img src="images/1.jpg" alt=""/></div>
+                    <div class="item active"><img src="images/2.jpg" alt=""/></div>
+                    <div class="item"><img src="images/3.png" alt=""/></div>
+                </div>
+                <!--小圆圈-->
+                <ol class="carousel-indicators">
+                    <li data-slide-to="0" data-target="#carousel_container"></li>
+                    <li data-slide-to="1" data-target="#carousel_container"></li>
+                    <li data-slide-to="2" data-target="#carousel_container"></li>
+                </ol>
+                <!--左右按钮-->
+                <a href="#carousel_container" data-slide="prev" class="left carousel-control">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#carousel_container" data-slide="next" class="right carousel-control">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
